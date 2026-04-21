@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine Hack - Official</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;700;900&display=swap');
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: #0d111d; 
+            color: white; 
+            overflow-x: hidden;
+        }
+
+        .nine-card { 
+            background: #161b2c; 
+            border: 1px solid rgba(255,255,255,0.05);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        .status-badge { 
+            font-family: 'JetBrains Mono', monospace; 
+            padding: 4px 12px; 
+            border-radius: 6px; 
+            font-size: 11px; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .powered-by {
+            font-size: 10px;
+            font-weight: 800;
+            color: #4b5563;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 8px;
+        }
+
+        .mf-full-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        .mf-flame-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .mf-text {
+            font-size: 26px;
+            font-weight: 900;
+            font-style: italic;
+            letter-spacing: -0.05em;
+            color: white;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div class="w-full max-w-md text-center">
+        <!-- Powered By Label -->
+        <p class="powered-by">Powered by</p>
+
+        <!-- Mediafire Branding -->
+        <div class="mf-full-logo">
+            <svg class="mf-flame-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M85,50 C85,70 70,85 50,85 C30,85 15,70 15,50 C15,30 30,15 50,15 C55,15 60,16 64,18 L55,25 C53,24 51,24 50,24 C36,24 24,36 24,50 C24,64 36,76 50,76 C64,76 76,64 76,50 C76,46 75,43 73,40 L82,32 C84,37 85,43 85,50 Z" fill="#007bff"/>
+                <path d="M50,35 C42,35 35,42 35,50 C35,58 42,65 50,65 C58,65 65,58 65,50 C65,45 62,41 58,38 L65,30 C70,35 74,42 74,50 C74,63 63,74 50,74 C37,74 26,63 26,50 C26,37 37,26 50,26 C55,26 60,28 64,31 L58,38 C55,36 53,35 50,35 Z" fill="#007bff" opacity="0.8"/>
+                <path d="M45,45 Q50,30 65,45 Q50,60 35,45 Q50,35 45,45" fill="white"/>
+            </svg>
+            <span class="mf-text">MediaFire</span>
+        </div>
+
+        <div class="nine-card rounded-[2.5rem] p-8 md:p-10 relative">
+            <div class="text-center">
+                <!-- Title -->
+                <h1 class="text-4xl font-black tracking-tighter mb-1 italic select-none">
+                    NINE HACK
+                </h1>
+                <p class="text-blue-500 font-mono text-[10px] tracking-[0.3em] uppercase mb-8">DEV: TIMEYLIES</p>
+
+                <!-- Status Items -->
+                <div class="space-y-4 text-sm">
+                    <!-- Version 1.0 (Now Found) -->
+                    <div class="flex items-center justify-between bg-[#1e253a] p-5 rounded-3xl border border-white/5 transition-all hover:border-white/10">
+                        <div class="text-left">
+                            <span class="block font-bold text-gray-400 text-sm mb-1 italic">Ninehack v.1.0</span>
+                            <span class="status-badge bg-green-500 text-black">FOUND</span>
+                        </div>
+                        <a href="https://www.mediafire.com/file/goz1alq4gsn8y01/com.timeylies.ninehackv.1.0.apk/file" target="_blank" class="bg-white text-black font-black text-xs px-5 py-3 rounded-2xl tracking-tight transition-transform active:scale-95 hover:bg-gray-200 text-center">
+                            DOWNLOAD
+                        </a>
+                    </div>
+
+                    <!-- Version 1.1 (Found) -->
+                    <div class="flex items-center justify-between bg-[#1e253a] p-5 rounded-3xl border border-white/5 transition-all hover:border-white/10">
+                        <div class="text-left">
+                            <span class="block font-bold text-gray-400 text-sm mb-1 italic">Ninehack v.1.1</span>
+                            <span class="status-badge bg-green-500 text-black">FOUND</span>
+                        </div>
+                        <a href="https://www.mediafire.com/file/nmuyjmbl9yvly2w/com.timeylies.ninehack-apkeditor.io_%25281%2529.apk/file" target="_blank" class="bg-white text-black font-black text-xs px-5 py-3 rounded-2xl tracking-tight transition-transform active:scale-95 hover:bg-gray-200 text-center">
+                            DOWNLOAD
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Information Text -->
+                <div class="mt-8 pt-8 border-t border-white/5 text-[11px] text-gray-500 text-left leading-relaxed">
+                    <p class="mb-2 uppercase font-bold tracking-widest text-gray-600">Archival Notice:</p>
+                    <p>All versions were previously archived on the <span class="italic">apkeditor.io</span> website. However, the site has since gone offline. You can still contact the website developers on <span class="text-blue-500 italic">Twitter (X)</span> for further inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
