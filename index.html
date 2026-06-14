@@ -1,13 +1,13 @@
-
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nine Hack - Official</title>
+    <title>Nine Hack - Exclusive Archive</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap');
         
         body { 
             font-family: 'Inter', sans-serif; 
@@ -60,6 +60,16 @@
             letter-spacing: -0.05em;
             color: white;
         }
+
+        /* Discontinued Alert Box */
+        .discontinued-box {
+            background: rgba(239, 68, 68, 0.07);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 20px;
+            padding: 18px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4">
@@ -80,41 +90,35 @@
 
         <div class="nine-card rounded-[2.5rem] p-8 md:p-10 relative">
             <div class="text-center">
-                <!-- Title -->
+                <!-- Header -->
                 <h1 class="text-4xl font-black tracking-tighter mb-1 italic select-none">
                     NINE HACK
                 </h1>
-                <p class="text-blue-500 font-mono text-[10px] tracking-[0.3em] uppercase mb-8">DEV: TIMEYLIES</p>
+                <p class="text-blue-500 font-mono text-[9px] tracking-[0.3em] uppercase mb-6">EXCLUSIVE ARCHIVE</p>
 
-                <!-- Status Items -->
-                <div class="space-y-4 text-sm">
-                    <!-- Version 1.0 (Now Found) -->
-                    <div class="flex items-center justify-between bg-[#1e253a] p-5 rounded-3xl border border-white/5 transition-all hover:border-white/10">
-                        <div class="text-left">
-                            <span class="block font-bold text-gray-400 text-sm mb-1 italic">Ninehack v.1.0</span>
-                            <span class="status-badge bg-green-500 text-black">FOUND</span>
-                        </div>
-                        <a href="https://www.mediafire.com/file/goz1alq4gsn8y01/com.timeylies.ninehackv.1.0.apk/file" target="_blank" class="bg-white text-black font-black text-xs px-5 py-3 rounded-2xl tracking-tight transition-transform active:scale-95 hover:bg-gray-200 text-center">
-                            DOWNLOAD
-                        </a>
+                <!-- Warning Box (Viereck) -->
+                <div class="discontinued-box">
+                    <div class="flex items-center gap-2 mb-2 text-red-500">
+                        <span class="w-2.5 h-2.5 bg-red-500 rounded-full animate-ping"></span>
+                        <span class="font-mono text-xs font-bold tracking-wider uppercase">Project Terminated</span>
                     </div>
-
-                    <!-- Version 1.1 (Found) -->
-                    <div class="flex items-center justify-between bg-[#1e253a] p-5 rounded-3xl border border-white/5 transition-all hover:border-white/10">
-                        <div class="text-left">
-                            <span class="block font-bold text-gray-400 text-sm mb-1 italic">Ninehack v.1.1</span>
-                            <span class="status-badge bg-green-500 text-black">FOUND</span>
-                        </div>
-                        <a href="https://www.mediafire.com/file/nmuyjmbl9yvly2w/com.timeylies.ninehack-apkeditor.io_%25281%2529.apk/file" target="_blank" class="bg-white text-black font-black text-xs px-5 py-3 rounded-2xl tracking-tight transition-transform active:scale-95 hover:bg-gray-200 text-center">
-                            DOWNLOAD
-                        </a>
-                    </div>
+                    <p class="text-base font-black text-white italic mb-2 tracking-tight">
+                        "There is no more Nine Hack."
+                    </p>
+                    <p class="text-[11px] text-gray-400 leading-relaxed font-medium">
+                        The project has been officially discontinued by the developer. This page serves purely as a legacy preservation monument and digital historical archive.
+                    </p>
                 </div>
 
-                <!-- Information Text -->
+                <!-- Information Text / Explanation -->
                 <div class="mt-8 pt-8 border-t border-white/5 text-[11px] text-gray-500 text-left leading-relaxed">
-                    <p class="mb-2 uppercase font-bold tracking-widest text-gray-600">Archival Notice:</p>
-                    <p>All versions were previously archived on the <span class="italic">apkeditor.io</span> website. However, the site has since gone offline. You can still contact the website developers on <span class="text-blue-500 italic">Twitter (X)</span> for further inquiries.</p>
+                    <p class="mb-2 uppercase font-bold tracking-widest text-gray-600">Exclusive Web Source:</p>
+                    <p class="mb-3">
+                        This webpage stands as the <strong>official memorial directory</strong> online dedicated to the preservation of the project's history.
+                    </p>
+                    <p>
+                        Both editions were originally stored and made public on the <span class="italic">apkeditor.io</span> digital repository. Since that service ceased operations, this final web-mirror was created to prevent the legacy of the project from becoming lost media. For questions or historical inquiries, you can reach the original authors on <span class="text-blue-500 italic">Twitter (X)</span>.
+                    </p>
                 </div>
             </div>
         </div>
