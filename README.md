@@ -1,2 +1,3 @@
 # Ninehack-
-Its a rentalscooter h4ck
+https://ymtmanuel-blip.github.io/Ninehack-/
+sorry ninehack is shutdown sorry
