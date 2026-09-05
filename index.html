@@ -4,70 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nine Hack - Exclusive Archive</title>
+    <title>Nine Hack - Notice</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;700;900&display=swap');
         
         body { 
             font-family: 'Inter', sans-serif; 
-            background: #0d111d; 
-            color: white; 
+            background: #080c14; 
+            color: #f3f4f6; 
             overflow-x: hidden;
         }
 
-        .nine-card { 
-            background: #161b2c; 
-            border: 1px solid rgba(255,255,255,0.05);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        .main-card { 
+            background: rgba(17, 24, 39, 0.75); 
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
         }
 
-        .status-badge { 
-            font-family: 'JetBrains Mono', monospace; 
-            padding: 4px 12px; 
-            border-radius: 6px; 
-            font-size: 11px; 
-            font-weight: bold;
-            text-transform: uppercase;
+        .notice-box {
+            background: rgba(239, 68, 68, 0.08);
+            border: 1px solid rgba(239, 68, 68, 0.25);
+            border-radius: 1.25rem;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+            text-align: left;
         }
 
-        .powered-by {
-            font-size: 10px;
-            font-weight: 800;
-            color: #4b5563;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-bottom: 8px;
-        }
-
-        .mf-full-logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-
-        .mf-flame-icon {
-            width: 32px;
-            height: 32px;
-        }
-
-        .mf-text {
-            font-size: 26px;
-            font-weight: 900;
-            font-style: italic;
-            letter-spacing: -0.05em;
-            color: white;
-        }
-
-        /* Discontinued Alert Box */
-        .discontinued-box {
-            background: rgba(239, 68, 68, 0.07);
-            border: 1px solid rgba(239, 68, 68, 0.2);
-            border-radius: 20px;
-            padding: 18px;
-            margin-bottom: 24px;
+        .redirect-box {
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.25);
+            border-radius: 1.25rem;
+            padding: 1.25rem;
             text-align: left;
         }
     </style>
@@ -75,56 +44,48 @@
 <body class="min-h-screen flex flex-col items-center justify-center p-4">
 
     <div class="w-full max-w-md text-center">
-        <!-- Powered By Label -->
-        <p class="powered-by">Powered by</p>
-
-        <!-- Mediafire Branding -->
-        <div class="mf-full-logo">
-            <svg class="mf-flame-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M85,50 C85,70 70,85 50,85 C30,85 15,70 15,50 C15,30 30,15 50,15 C55,15 60,16 64,18 L55,25 C53,24 51,24 50,24 C36,24 24,36 24,50 C24,64 36,76 50,76 C64,76 76,64 76,50 C76,46 75,43 73,40 L82,32 C84,37 85,43 85,50 Z" fill="#007bff"/>
-                <path d="M50,35 C42,35 35,42 35,50 C35,58 42,65 50,65 C58,65 65,58 65,50 C65,45 62,41 58,38 L65,30 C70,35 74,42 74,50 C74,63 63,74 50,74 C37,74 26,63 26,50 C26,37 37,26 50,26 C55,26 60,28 64,31 L58,38 C55,36 53,35 50,35 Z" fill="#007bff" opacity="0.8"/>
-                <path d="M45,45 Q50,30 65,45 Q50,60 35,45 Q50,35 45,45" fill="white"/>
-            </svg>
-            <span class="mf-text">MediaFire</span>
-        </div>
-
-        <div class="nine-card rounded-[2.5rem] p-8 md:p-10 relative">
+        <div class="main-card rounded-[2.5rem] p-8 md:p-10 relative">
             <div class="text-center">
-                <!-- Header -->
-                <h1 class="text-4xl font-black tracking-tighter mb-1 italic select-none">
+                
+                <!-- Title -->
+                <h1 class="text-4xl font-black tracking-tighter mb-1 italic select-none text-white">
                     NINE HACK
                 </h1>
-                <p class="text-blue-500 font-mono text-[9px] tracking-[0.3em] uppercase mb-6">EXCLUSIVE ARCHIVE</p>
+                <p class="text-blue-400 font-mono text-[9px] tracking-[0.3em] uppercase mb-6">OFFICIAL NOTICE</p>
 
-                <!-- Warning Box (Viereck) -->
-                <div class="discontinued-box">
-                    <div class="flex items-center gap-2 mb-2 text-red-500">
-                        <span class="w-2.5 h-2.5 bg-red-500 rounded-full animate-ping"></span>
-                        <span class="font-mono text-xs font-bold tracking-wider uppercase">Project Terminated</span>
+                <!-- Outdated Notice Box -->
+                <div class="notice-box">
+                    <div class="flex items-center gap-2 mb-2 text-red-400">
+                        <span class="w-2 h-2 bg-red-500 rounded-full"></span>
+                        <span class="font-mono text-[10px] font-bold tracking-wider uppercase">Page Unavailable</span>
                     </div>
-                    <p class="text-base font-black text-white italic mb-2 tracking-tight">
-                        "There is no more Nine Hack."
+                    <p class="text-base font-black text-white mb-1 italic">
+                        This website is no longer available.
                     </p>
                     <p class="text-[11px] text-gray-400 leading-relaxed font-medium">
-                        The project has been officially discontinued by the developer. This page serves purely as a legacy preservation monument and digital historical archive.
+                        This host has been decommissioned and is no longer being updated or maintained.
                     </p>
                 </div>
 
-                <!-- Information Text / Explanation -->
-                <div class="mt-8 pt-8 border-t border-white/5 text-[11px] text-gray-500 text-left leading-relaxed">
-                    <p class="mb-2 uppercase font-bold tracking-widest text-gray-600">Exclusive Web Source:</p>
-                    <p class="mb-3">
-                        This webpage stands as the <strong>official memorial directory</strong> online dedicated to the preservation of the project's history.
+                <!-- New Domain Redirect Box -->
+                <div class="redirect-box">
+                    <div class="flex items-center gap-2 mb-2 text-blue-400">
+                        <span class="w-2 h-2 bg-blue-400 rounded-full animate-ping"></span>
+                        <span class="font-mono text-[10px] font-bold tracking-wider uppercase">New Address</span>
+                    </div>
+                    
+                    <p class="text-xs font-bold text-gray-300 mb-3">
+                        A new website is now available at:
                     </p>
-                    <p>
-                        Both editions were originally stored and made public on the <span class="italic">apkeditor.io</span> digital repository. Since that service ceased operations, this final web-mirror was created to prevent the legacy of the project from becoming lost media. For questions or historical inquiries, you can reach the original authors on <span class="text-blue-500 italic">Twitter (X)</span>.
-                    </p>
+
+                    <a href="https://Ninehack.gt.tc" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-500 text-white font-black text-xs py-3.5 px-4 rounded-xl tracking-tight uppercase transition-all duration-200 active:scale-95 shadow-lg shadow-blue-600/30">
+                        Ninehack.gt.tc
+                    </a>
                 </div>
+
             </div>
         </div>
     </div>
 
 </body>
 </html>
-
-
